@@ -7,7 +7,7 @@
       @click="toggleTodoStatus(todo)"
       :label="`${ todo.title }`"
     ></v-checkbox>
-    <button @click="removeTodo(todo)">Delete</button>
+    <button @click="removeTodo(todo.id)">Delete</button>
     </div>
   </div>
 </template>

@@ -22,13 +22,13 @@ export default new Vuex.Store({
   mutations: {
     NEW_TODO (state, todoItem) {
       state.todos.push({
+        id: Date.now(),
         title: todoItem,
         completed: false
       })
     },
-    DELETE_TODO (state, todoItem) {
-      var index = state.todos.findIndex(c => c.todos === todoItem.todos)
-      state.todos.splice(index, 1)
+    DELETE_TODO (state, id) {
+      state.todos = state.todos.filter(todo => todo.id !== id)
     },
     TOGGLE_TODO_STATUS (state, todoItem) {
       todoItem.completed = !todoItem.completed
