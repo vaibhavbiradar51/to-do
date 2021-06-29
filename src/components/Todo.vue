@@ -7,7 +7,18 @@
       @click="toggleTodoStatus(todo)"
       :label="`${ todo.title }`"
     ></v-checkbox>
-    <button @click="removeTodo(todo.id)">Delete</button>
+    <v-btn
+      class="mx-2"
+      fab
+      dark
+      small
+      color="primary"
+      @click="removeTodo(todo.id)"
+    >
+      <v-icon dark>
+        mdi-minus
+      </v-icon>
+    </v-btn>
     </div>
   </div>
 </template>
