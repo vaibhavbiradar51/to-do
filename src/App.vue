@@ -11,6 +11,11 @@
       <v-toolbar-title>To-Do List</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
+    <br><br>
+    <h3>Completed: {{ completedTodos }}</h3>
+    <br>
+    <h3>Not Completed: {{ pendingTodos }}</h3>
+    <br><br>
     <todo-form />
     <todos-list />
   </div>
