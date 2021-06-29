@@ -2,7 +2,7 @@
   <div style="width:250px; margin:5px auto;">
     <div style="display:flex; justify-content:space-between">
     <v-checkbox
-      v-model="checkbox"
+      :input-value="todo.completed"
       class="{completed: todo.completed}"
       @click="toggleTodoStatus(todo)"
       :label="`${ todo.title }`"
@@ -49,9 +49,6 @@ li {
 }
 a {
   color: #42b983;
-}
-.completed{
-  text-decoration: line-through;
 }
 .completed{
   text-decoration: line-through;
