@@ -43,20 +43,20 @@ export default new Vuex.Store({
         console.log(error)
       })
     },
-    getUnits: function (state) {
+    getbackend: function (state) {
       state.todos = []
-      var dbTasks = []
+      var dbtodo = []
       feathersClient.service('todo').find().then((result) => {
-        dbTasks = result
-        console.log(dbTasks.data, 'tdfghj')
-        for (let i = 0; i < dbTasks.data.length; i++) {
+        dbtodo = result
+        console.log(dbtodo.data, 'tdfghj')
+        for (let i = 0; i < dbtodo.data.length; i++) {
           const newTask = {
-            id: dbTasks.data[i]._id,
-            title: dbTasks.data[i].title,
-            completed: dbTasks.data[i].completed
+            id: dbtodo.data[i]._id,
+            title: dbtodo.data[i].title,
+            completed: dbtodo.data[i].completed
           }
           state.todos.push(newTask)
-          console.log(state.tasks)
+          console.log(state.todoItem)
         }
       }).catch((error) => {
         console.log(error)
