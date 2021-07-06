@@ -43,7 +43,7 @@ export default new Vuex.Store({
         console.log(error)
       })
     },
-    getbackend: function (state) {
+    getUnits: function (state) {
       state.todos = []
       var dbtodo = []
       feathersClient.service('todo').find().then((result) => {
