@@ -31,6 +31,9 @@ export default {
     addNewTodoItem () {
       this.$store.dispatch('addNewTodo', this.newItem)
       this.newItem = ''
+    },
+    beforeMount () {
+      this.$store.commit('getUnits')
     }
   }
 }

@@ -15,6 +15,11 @@ export default {
     ...mapState({
       todos: 'todos'
     })
+  },
+  methods: {
+    beforeMount () {
+      this.$store.commit('getUnits')
+    }
   }
 }
 </script>
