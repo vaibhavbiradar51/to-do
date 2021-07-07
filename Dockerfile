@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-WORKDIR /todo-vuejs
+WORKDIR /app
 COPY package*.json ./
 RUN npm install -q
 RUN npm install -g @vue/cli
