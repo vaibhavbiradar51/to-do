@@ -32,7 +32,7 @@ export default {
       removeTodo: 'deleteTodo',
       toggleTodoStatus: 'toggleTodoStatus'
     })
-    }
+  }
 }
 </script>
 <style scoped>
