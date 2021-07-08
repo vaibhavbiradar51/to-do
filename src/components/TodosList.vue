@@ -17,9 +17,6 @@ export default {
     })
   },
   methods: {
-    beforeMount () {
-      this.$store.commit('getUnits')
-    }
   }
 }
 </script>
