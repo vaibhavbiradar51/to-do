@@ -33,9 +33,6 @@ export default {
       toggleTodoStatus: 'toggleTodoStatus'
     })
     }
-   beforeMount () {
-     this.$store.commit('getUnits')
-  }
 }
 </script>
 <style scoped>
