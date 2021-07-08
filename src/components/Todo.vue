@@ -31,10 +31,10 @@ export default {
     ...mapActions({
       removeTodo: 'deleteTodo',
       toggleTodoStatus: 'toggleTodoStatus'
-    }),
-    beforeMount () {
-      this.$store.commit('getUnits')
+    })
     }
+   beforeMount () {
+     this.$store.commit('getUnits')
   }
 }
 </script>
