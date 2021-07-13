@@ -12,7 +12,7 @@
       <v-spacer></v-spacer>
     </v-toolbar>
     <br><br>
-    <h3>Ne Completed: {{ completedTodos }}</h3>
+    <h3>Completed: {{ completedTodos }}</h3>
     <br>
     <h3>Not Completed: {{ pendingTodos }}</h3>
     <br><br>
